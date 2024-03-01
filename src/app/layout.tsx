@@ -20,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     
-    <ClerkProvider appearance={{ baseTheme: dark}}>
-      <html lang="en" suppressHydrationWarning>
+    
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class"
           defaultTheme="system"
@@ -33,7 +33,6 @@ export default function RootLayout({
         </ThemeProvider>
         </body>
         </html>
-    </ClerkProvider>
     
   );
 }
