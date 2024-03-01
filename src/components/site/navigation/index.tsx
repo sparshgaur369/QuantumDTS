@@ -8,7 +8,7 @@ import Link from 'next/link';
     user?:null|User
 } */
 
-const Navigation = ({user}: Props) => {
+const Navigation = () => {
     return <div className="p-4 flex items-center justify-between relative ">
         <aside className="flex items-center gap-2 ">
         <Image src={'/assets/quantum-dts-logo.png'} width={40} height={40} alt="quantumDTS logo"/>
