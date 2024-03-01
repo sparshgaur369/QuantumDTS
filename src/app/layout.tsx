@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
 import { ThemeProvider } from "@/providers/theme-provider";
+import Navigation from '@/components/site/navigation';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,7 +28,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          
+          <Navigation/>
         {children}
     
         </ThemeProvider>
